@@ -10,6 +10,8 @@ api_key=os.getenv('api_key')
 
 url = "https://openrouter.ai/api/v1/chat/completions"
 
+st.write("API Key Loaded:", bool(api_key))
+
 headers = {
     "Authorization": api_key,  # ✅ Add 'Bearer ' prefix
     "Content-Type": "application/json",
