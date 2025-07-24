@@ -9,7 +9,7 @@ st.write("API Key Present:", bool(api_key))
 st.write("API Key Preview:", api_key[:6] + "...")
 
 headers = {
-    "Authorization": api_key,
+    "Authorization": f"Bearer {api_key}",
     "Content-Type": "application/json",
     "HTTP-Referer": "https://your-app.streamlit.app",
     "X-Title": "StreamlitApp"
